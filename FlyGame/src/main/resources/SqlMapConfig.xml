@@ -5,16 +5,12 @@
 	
    <transactionManager type="JDBC">
       <dataSource type="SIMPLE">		
-         <property name="JDBC.Driver" value="com.mysql.jdbc.Driver"/>
-         <property name="JDBC.ConnectionURL" value="jdbc:mysql://localhost:3306/student"/>
-         <property name="JDBC.Username" value="root"/>
-         <property name="JDBC.Password" value="123456"/>			
+         <property name="JDBC.Driver" value="org.sqlite.JDBC"/>
+         <property name="JDBC.ConnectionURL" value="jdbc:sqlite:C:/Users/Lovewife/Desktop/chinook.db"/>
+         <property name="JDBC.Username" value=""/>
+         <property name="JDBC.Password" value=""/>	
       </dataSource>
    </transactionManager>
 
    <sqlMap resource="Account.xml"/>
-   <sqlMap resource="Student.xml"/>
-   <sqlMap resource="Subjects.xml"/>
-   <sqlMap resource="Course.xml"/>
-   <sqlMap resource="AdminAccount.xml"/>
 </sqlMapConfig>

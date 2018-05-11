@@ -4,14 +4,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>HomePage</title>
 </head>
 <body>
-	<div style="float: right;color: #939393 !important;font-weight: bold !important;font-size: 22px;">
-		<a>News</a> &#160;&#160;&#160; 
-		<a>Home</a> &#160;&#160;&#160; 
-		<a>Change email password</a> &#160;&#160;&#160; 
-		<a>Email</a>
-	</div>
+
 </body>
 </html>

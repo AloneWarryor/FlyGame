@@ -25,21 +25,15 @@ public class loginAction extends ActionSupport {
 /*	private static Logger LOGGER = Logger.getLogger("InfoLogging");*/
 	
 	public String execute() throws Exception {
-		if(btnLogin != null) {
-			if(checkbox == null) {
 				AccountModel am = new AccountModel();
-				Account a = am.getAccount(userName, password);
+				Account a = am.getAccount();
 				if(a.getStudentID()!=null) {
-					session.put("user", a);
-					return "StudentLogin";
+					message = a.getStudentID();
+					return SUCCESS;
 				}else {
 					message = "User Name or Password invalid";
 				}
-			}else {
-				
-			}
-		}
-		return ERROR;		
+		return SUCCESS;		
 	}
 	
 
