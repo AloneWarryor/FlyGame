@@ -28,5 +28,7 @@ public class getListGameAction extends ActionSupport {
 	public void setListGame(List<Game> listGame) {
 		this.listGame = listGame;
 	}
+
+	
 	
 }
