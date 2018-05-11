@@ -6,11 +6,11 @@
    <transactionManager type="JDBC">
       <dataSource type="SIMPLE">		
          <property name="JDBC.Driver" value="org.sqlite.JDBC"/>
-         <property name="JDBC.ConnectionURL" value="jdbc:sqlite:C:/Users/Lovewife/Desktop/chinook.db"/>
+         <property name="JDBC.ConnectionURL" value="jdbc:sqlite:C:\Users\Duy\git\FlyGame\FlyGame\src\main\resources\flyGame.db"/>
          <property name="JDBC.Username" value=""/>
          <property name="JDBC.Password" value=""/>	
       </dataSource>
    </transactionManager>
 
-   <sqlMap resource="Account.xml"/>
+   <sqlMap resource="Game.xml"/>
 </sqlMapConfig>
