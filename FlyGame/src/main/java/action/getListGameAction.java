@@ -32,10 +32,4 @@ public class getListGameAction extends ActionSupport {
 	public void setListGame(List<Game> listGame) {
 		this.listGame = listGame;
 	}
-
-<<<<<<< Upstream, based on origin/master
-	
-=======
->>>>>>> ba3bcc6 Xin dung
-	
 }
