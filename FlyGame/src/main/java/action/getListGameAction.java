@@ -15,7 +15,7 @@ public class getListGameAction extends ActionSupport {
 	private static final long serialVersionUID = 1L;
 	private List<Game> listGame;
 	
-	public String getListGame() throws Exception {
+	public String execute() throws Exception {
 		try {
 			GameModel gm = new GameModel();
 			listGame = gm.getAllGame();
@@ -25,10 +25,17 @@ public class getListGameAction extends ActionSupport {
 		return SUCCESS;
 	}
 
+	public List<Game> getListGame() {
+		return listGame;
+	}
+
 	public void setListGame(List<Game> listGame) {
 		this.listGame = listGame;
 	}
 
+<<<<<<< Upstream, based on origin/master
 	
+=======
+>>>>>>> ba3bcc6 Xin dung
 	
 }
