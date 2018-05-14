@@ -13,7 +13,13 @@
 		</action>
 	</package>
 	
-	<package name="FlyGame" extends="json-default">
+	<package name="FlyGameController" extends="struts-default">
+		<action name="testKahootController">
+			<result>WEB-INF\pages\consoles\kahoot.jsp</result>
+		</action>
+	</package>
+	
+	<package name="FlyGameMainJson" extends="json-default">
 		<action name="getListGim" class="action.getListGameAction">
 			<result type="json"></result>
 		</action>
