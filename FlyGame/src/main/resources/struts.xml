@@ -24,4 +24,11 @@
 			<result type="json"></result>
 		</action>
 	</package>
+	
+	<package name="FlyGameGetPage" extends="json-default">
+		<action name="pageInfo" class="action.getPageInfoAction" method="pageInfo">
+			<result name="success" type="json"></result>
+		</action>
+	</package>
+	
 </struts>

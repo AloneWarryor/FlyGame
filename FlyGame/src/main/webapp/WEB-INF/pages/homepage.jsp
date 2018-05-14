@@ -47,8 +47,22 @@ function getRealTimeData() {
 		}
 	});
 }
+
+function getPageInfo() {
+	$.ajax({
+		url:'pageInfo',
+		dataType:'json',
+		contentType : 'application/json; charset=utf-8',
+		success: function (response) {
+			var info = response.info;
+			$("#info").html(info);
+		}
+	});
+}
+
 $( document ).ready(function () {
 	getRealTimeData();
+	getPageInfo();
 })
 </script>
 </head>
@@ -59,7 +73,7 @@ $( document ).ready(function () {
 				<div class="h6">Fly Games</div>
 			</div>
 			<div class="col-6">
-				<div class="h6 text-right">192.168.xxx.xxx/webapp/joinsession</div>
+				<div class="h6 text-right"><p id="info"></p></div>
 			</div>
 		</div>
 		<div class="row">
